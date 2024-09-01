@@ -9,7 +9,7 @@ import axios from 'axios';
 const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
   useEffect(() => {
-  axios.get("http://localhost:3000/allPositions").then((res) => {
+  axios.get("https://dashboard-backend-1-5ets.onrender.com/allPositions").then((res) => {
     console.log(res.data);
     setAllPositions(res.data);
   });
